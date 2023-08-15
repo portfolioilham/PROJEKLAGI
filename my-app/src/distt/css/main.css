@@ -1,0 +1,951 @@
+* {
+
+
+  font-family: poppins;
+
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  padding-top: 15px;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+  background-color: rgb(0, 255, 183);
+  transition: all 2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all 2s;
+  -ms-transition: all .2s;
+  -o-transition: all 2s;
+
+
+}
+
+
+.navbar .nav-link a {
+  padding: 5px 10px 5px 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(231, 228, 244);
+  width: 100%;
+
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navbar .tombol {
+    margin-left: 15px;
+  }
+}
+
+
+.navbar .nav-link .active {
+  background-color: #3512fa;
+  color: #f6f8fd;
+}
+
+.navbar .nav-link a:hover {
+  color: #f1f1f1;
+}
+
+.homepage {
+  position: fixed;
+  margin-top: 4%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to left,
+      #061e6c,
+      #10066b,
+      #c6ffdd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,
+      #10d7da,
+      #754aec,
+      #600aff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.tombol button {
+  width: 120px;
+  height: 40px;
+  font-size: 13px;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+  border-color: #1cbfff;
+  color: rgb(255, 255, 255);
+}
+
+.tombol button:hover {
+  color: #f1f1f1;
+  background-image: linear-gradient(-225deg, #3305eb 0%, #6B8DD6 48%, #37c2d7 100%);
+
+}
+
+.navbar-expand.active {
+  background-color: #0149ff;
+}
+
+
+/* .carousel-image-container {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  color: black;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 140px; /* Mengatur ukuran lebar tanda panah */
+/* height: 40px; /* Mengatur ukuran tinggi tanda panah */
+/* Mengatur warna tanda panah */
+/* color: #3305eb; */
+/* Tambahkan gaya lainnya sesuai kebutuhan */
+/* } */
+
+
+.homepage .header-box h1 {
+  margin-top: 25%;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.homepage .header-box img {
+  margin-top: 20%;
+  width: 100%;
+}
+
+.homepage .header-box h1 span {
+
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+
+}
+
+.homepage .header-box p {
+  font-size: small;
+  font-family: Asisstant;
+  color: rgb(255, 255, 255);
+  line-height: 2;
+}
+
+.homepage .header-box .tombolan button {
+  background-color: #0048ff;
+  color: white;
+  margin: 5px;
+}
+
+.homepage .header-box .tombolan button:hover {
+  background-color: #ff1100;
+  color: white;
+  margin: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: transparent;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+
+.homepage .header-box button {
+  background-color: #dbe5ff;
+
+
+
+}
+
+
+@media screen and (min-width:1040px) {
+  .homepage .header-box img {
+    display: block;
+    margin-top: 100px;
+  }
+}
+
+p {
+  max-width: 100%;
+}
+
+/* Atur lebar maksimal pada layar dengan lebar kurang dari 768px */
+@media screen and (max-width: 767px) {
+  p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .homepage .header-box img {
+
+    width: 300px;
+  }
+}
+
+/* Atur lebar maksimal pada layar dengan lebar kurang dari 576px */
+@media screen and (max-width: 575px) {
+  p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 493px) {
+  p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1091px) {
+  p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:988px) {
+  .homepage .header-box img {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+.kelas {
+  background-color: #0149ff;
+  padding-top: 70px;
+  width: 100%;
+  padding-bottom: 50px;
+  /* Atur jarak atas sesuai kebutuhan */
+}
+
+.tanda {
+  color: white;
+}
+
+.tanda p {
+  font-size: small;
+  font-family: Asisstant;
+}
+
+.begambak {
+  width: 80%;
+}
+
+.kecil img {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kecil p {
+  margin-top: 10px;
+  font-size: smaller;
+  color: white;
+}
+
+.kecil button {
+  margin-bottom: 20px;
+}
+
+/* @media screen and (min-width:766px) {
+  .homepage .kelas .kecil img {
+    margin: auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px,1fr)  );
+  }
+}
+@media screen and (max-width:766px) {
+  .homepage .kelas .kecil img {
+    width: 300px ;
+   
+  }
+}
+@media screen and (min-width:375px) {
+  .homepage .kelas .kecil img {
+   
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)  );
+  }
+}
+@media screen and (min-width:400px) {
+  .homepage .kelas .kecil img {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)  );
+  }
+}
+@media screen and (min-width:672px) {
+  .homepage .kelas .kecil img {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)  );
+  }
+}
+@media screen and (max-width: 302px) {
+  .homepage .kelas .kecil img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 766px) {
+  .homepage .kelas .kecil img {
+    width: 50%; /* Atur lebar gambar sesuai kebutuhan */
+/* max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+  */
+@media screen and (min-width: 488px) {
+  .homepage .kelas .kecil img {
+    width: 80%;
+    /* Atur lebar gambar sesuai kebutuhan */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homepage .kelas .kecil img {
+    width: 80%;
+    /* Atur lebar gambar sesuai kebutuhan */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homepage .kelas .kecil img {
+    width: 70%;
+    /* Atur lebar gambar sesuai kebutuhan */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+
+.homepage .kelas .kecil img {
+
+  transition: 1s;
+
+}
+
+.homepage .kelas .kecil img:hover {
+  transform: scale(0.8);
+}
+
+.luasa .jarak {
+  margin-top: 10px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+
+.Testimonial {
+  margin-top: 50px;
+}
+
+.Testimonial h1 {
+  font-weight: small;
+  font-size: 30px;
+  color: white;
+  font-variant: small;
+}
+
+.kelas .tanda .kecil .luasa .jarak {
+  padding-top: 20px;
+}
+
+.luasa {
+  width: 100%;
+  height: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:768px) {
+  .luasa {
+    width: 100%;
+    height: 5%;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+
+  .jarak {
+    margin-top: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+}
+
+.Testimonial {
+  box-sizing: border-box;
+  background-color: #061e6c;
+  padding-top: 40px;
+  margin-top: 0;
+  width: 100%;
+  
+}
+
+
+/* Gaya untuk Swiper Carousel */
+
+/* Container Swiper */
+/* Gaya untuk Swiper Carousel */
+/* Gaya untuk Swiper Carousel */
+/* Gaya untuk Swiper Carousel */
+/* Gaya untuk Swiper Carousel */
+
+.homepage .Testimonial .swiper {
+  width: 100%;
+  padding-bottom: 90px;
+  margin-top: 50px;
+}
+
+.homepage .Testimonial .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  cursor: grabbing;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.homepage .Testimonial .swiper-slide:hover {
+  background-image: linear-gradient(58.2deg, rgba(40, 91, 212, 0.73) -3%, rgba(171, 53, 163, 0.45) 49.3%, rgba(255, 204, 112, 0.37) 97.7%);
+
+}
+
+
+.linkstarget {
+  color: white;
+  text-decoration: none;
+}
+
+.homepage .Testimonial .swiper-slide img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.homepage .Testimonial .swiper-slide .nama {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.homepage .Testimonial .skills {
+  font-size: 13px;
+  color: rgb(85, 23, 255);
+}
+
+
+.desc {
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: Monserrat;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+
+.horizontal-line {
+  border-top: 1px solid black;
+  margin: 10px 0;
+}
+.mySwiper {
+  width: 100%;
+}
+/* Untuk layar lebar 640px atau lebih besar */
+@media (min-width: 640px) {
+  .mySwiper {
+    width: 80%;
+  }
+}
+/* Untuk layar lebar 768px atau lebih besar */
+@media (min-width: 768px) {
+  .mySwiper {
+    width: 70%;
+  }
+}
+/* Untuk layar lebar 992px atau lebih besar */
+@media (min-width: 992px) {
+  .mySwiper {
+    width: 60%;
+  }
+}
+/* Untuk layar lebar 1200px atau lebih besar */
+@media (min-width: 1200px) {
+  .mySwiper {
+    width: 50%;
+  }
+}
+
+.faqb {
+  background-color: #10066b;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.faqb .ukuranb {
+  margin-top: 100px;
+}
+.faq {
+  background-color: #10066b;
+
+  
+ 
+}
+.faq .ukuran {
+  margin-top: 70px;
+ 
+}
+/* App.css */
+/* App.css */
+/* App.css */
+/* App.css */
+/* CSS untuk footer */
+/* Footer Section */
+.wanraao {
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  padding-top: 100px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 40px;
+}
+ .wanraao .latifah {
+  width: 100%;
+    font-size: 10px; /* Mengurangi ukuran font tombol */
+    padding: 5px 8px; /* Mengurangi padding tombol */
+    height: 35px; /* Mengurangi tinggi tombol */
+  }
+
+.wanraao h6 {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.wanraao p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+.wanraao .gulgana .copright {
+  margin-top: 100px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+}
+/* Responsif untuk ukuran layar kecil, menengah, dan besar */
+
+/* 
+@media (min-width: 1200px) {
+  .wanraao {
+   padding-top: 100px;
+  }
+  .wanraao .gulgana .copright {
+    margin-top: 100px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .wanraao h6 {
+    font-size: 16px;
+  }
+  .wanraao p {
+    font-size: 12px;
+  }
+} */
+
+
+@media (max-width: 1200px) {
+  .wanraao {
+    padding: 20px ;
+    height: auto;
+  }
+  .wanraao .gulgana .copright {
+    margin-top: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .wanraao h6 {
+    font-size: 16px;
+  }
+  .wanraao p {
+    font-size: 12px;
+  }
+}
+
+
+
+@media (min-width: 500px) {
+  .wanraao {
+    padding: 20px ;
+    height: auto;
+  }
+  .wanraao .gulgana .copright {
+    margin-top: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .wanraao h6 {
+    font-size: 16px;
+  }
+  .wanraao p {
+    font-size: 12px;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .wanraao {
+    padding: 20px ;
+    height: auto;
+    
+  }
+  .wanraao .gulgana .copright {
+    margin-top: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .wanraao h6 {
+    font-size: 16px;
+  }
+  .wanraao p {
+    font-size: 12px;
+  }
+}
+
+/* Responsif khusus untuk ukuran layar 900px - 1100px */
+@media (max-width: 1100px) {
+  .wanraao .latifah {
+    font-size: 12px; /* Mengurangi ukuran font tombol */
+    padding: 5px 10px; /* Mengurangi padding tombol */
+    height: 30px;
+  }
+}
+/* Responsif khusus untuk ukuran layar di bawah 900px */
+/* Responsif khusus untuk ukuran layar di bawah 900px */
+@media (max-width: 900px) {
+  .wanraao .latifah {
+    font-size: 10px; /* Mengurangi ukuran font tombol */
+    padding: 5px 8px; /* Mengurangi padding tombol */
+    height: 35px; /* Mengurangi tinggi tombol */
+  }
+
+  .wanraao {
+    padding: 10px 0; /* Mengurangi padding atas dan bawah footer */
+  }
+}
+
+/* Responsif khusus untuk ukuran layar di bawah 346px */
+
+@media (min-width: 300px) {
+  .wanraao .latifah {
+    width: 50%;
+    font-size: 10px; /* Mengurangi ukuran font tombol */
+    padding: 3px 6px; /* Mengurangi padding tombol */
+    height: 30px; /* Mengurangi tinggi tombol */
+  }
+  .wanraao .gulgana .copright {
+    margin-top: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  
+  .wanraao {
+    padding: 5px 0; /* Mengurangi padding atas dan bawah footer lebih lanjut */
+  }
+  .wanraao h6 {
+    margin-bottom: 15px; /* Mengurangi margin bawah h6 */
+    padding-top: 50px;
+  }
+}
+
+
+@media (min-width: 300px) {
+  .wanraao .latifah {
+    width: 50%;
+    font-size: 10px; /* Mengurangi ukuran font tombol */
+    padding: 3px 6px; /* Mengurangi padding tombol */
+    height: 30px; /* Mengurangi tinggi tombol */
+  }
+
+  .list-terurut {
+   
+    display: flex;
+    font-size: 15px;
+  }
+  .jarakaus {
+    padding-top: 0;
+  }
+input[type="text"] {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+}
+  .wanraao {
+    padding: 5px 0; /* Mengurangi padding atas dan bawah footer lebih lanjut */
+
+  }
+  .wanraao h6 {
+    margin-bottom: 15px; /* Mengurangi margin bawah h6 */
+    padding-top: 25px;
+  }
+  .wanraao .gulgana .copright {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+
+
+
+
+
+@media (max-width: 300px) {
+  .wanraao .latifah {
+    font-size: 8px; /* Mengurangi ukuran font tombol */
+    padding: 3px 6px; /* Mengurangi padding tombol */
+    height: 20px; /* Mengurangi tinggi tombol */
+  }
+
+  .wanraao {
+    padding: 5px 0; /* Mengurangi padding atas dan bawah footer lebih lanjut */
+  }
+
+  .wanraao h6 {
+    margin-bottom: 15px; /* Mengurangi margin bawah h6 */
+    padding-top: 50px;
+  }
+}
+
+
+.kelasx {
+ 
+  overflow-y: scroll;
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to left,
+      #061e6c,
+      #10066b,
+      #c6ffdd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,
+      #10d7da,
+      #754aec,
+      #600aff);
+}
+.kelasx .perjelasan {
+  margin-top: 100px;
+  color: white;
+}
+.kelasx .tiriki {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.faqe {
+  background: transparent;
+}
+.acorjarak {
+  margin-top: 50px;
+}
+/* TESTI NAVBAR */
+.testimonial h1 {
+  font-weight: small;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-variant: small;
+  margin-bottom: 50px;
+}
+
+.testimonial {
+  box-sizing: border-box;
+  background-color: #061e6c;
+  padding-top: 50px;
+  margin-top: 0;
+  width: 100%;
+}
+.Homepage {
+  background-color: #061e6c;
+  padding-top: 100px;
+}
+.Homepage .testimonial .swiper {
+  width: 100%;
+  padding-bottom: 90px;
+  margin-top: 10px;
+  height: 400px;
+}
+
+.Homepage .testimonial .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  cursor: grabbing;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.Homepage .testimonial .swiper-slide:hover {
+  background-image: linear-gradient(58.2deg, rgba(40, 91, 212, 0.73) -3%, rgba(171, 53, 163, 0.45) 49.3%, rgba(255, 204, 112, 0.37) 97.7%);
+
+}
+
+.Homepage .testimonial .swiper-slide img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Homepage .testimonial .swiper-slide .namal {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Homepage .testimonial .skills {
+  font-size: 13px;
+  color: rgb(85, 23, 255);
+}
+
+.desck {
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: Monserrat;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+
+.Homepage .testimonial h1 {
+  color: white;
+}
+
+
+.list-terurut {
+  margin-top: 50px;
+}
+
+.faqe {
+  padding-top: 120px;
+  height: 100%;
+  background-color: #2f15f1;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.containerk {
+  
+  max-width: 900px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: move 3s linear infinite;
+  position: absolute;
+  z-index: 999;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
