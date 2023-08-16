@@ -4,38 +4,37 @@ import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 import heroimage from "../assets/img/kelas/image.png";
 import hp from "../assets/img/kelas/hp (2).png";
-import { kelasTerbaru,  } from "../data/index";
+import { kelasTerbaru } from "../data/index";
 import { useNavigate } from "react-router-dom";
 // import { Swiper, SwiperSlide } from "swiper/react";
 import Faq from "../Components/Faqcomponent";
 // import Footerr from "../Components/Footer";
-import Testi from '../Page/TESTIMONIAL1'
-
+import Testi from "../Page/TESTIMONIAL1";
 // import { Pagination } from "swiper/modules";
 // import required modules
 const Homepages = () => {
   const halamanganti = useNavigate();
   return (
     <div className="homepage w-100  ">
-      <header className=" d-flex align-item-center">
-        <Container>
-          <Row className="header-box d-flex align-item-center">
-            <Col lg={6}>
-              <div className="tombolan ">
-                <h1 className="mb-4 ">
-                  Temukan bakat anda <span>segera di Spectre academy</span>{" "}
-                  Jadikan karir impianmu <br /> menjadi kenyataan
-                </h1>
-                <p>
-                  Specter Academy, jembatan menuju kesuksesan kreatifmu! Temukan
-                  bakat coding, design, <br /> dan ilmu kreatif lainnya bersama
-                  kami. Bergabung sekarang untuk meraih karir yang <br />{" "}
-                  gemilang dalam dunia digital.
-                </p>
-                <button className="btn btn-blue btn-lg ">
-                  Daftar Sekarang
-                </button>
-                <button className="btn btn-outline-blue btn-md rounded-1 ">
+    <header className=" d-flex align-item-center">
+    <Container>
+    <Row className="header-box d-flex align-item-center">
+    <Col lg={6}>
+    <div className="tombolan ">
+    <h1 className="mb-4 ">
+      Temukan bakat anda <span>segera di Spectre academy</span>{" "}
+      Jadikan karir impianmu <br /> menjadi kenyataan
+    </h1>
+    <p>
+    Specter Academy, jembatan menuju kesuksesan kreatifmu! Temukan
+    bakat coding, design, <br /> dan ilmu kreatif lainnya bersama
+    kami. Bergabung sekarang untuk meraih karir yang <br />{" "}
+    gemilang dalam dunia digital.
+    </p>
+    <button className="btn btn-blue btn-lg ">
+    Daftar Sekarang
+    </button>
+    <button className="btn btn-outline-blue btn-md rounded-1 ">
                   Lihat Promo
                 </button>
               </div>
@@ -117,9 +116,9 @@ const Homepages = () => {
         </Container>
       </div>
       {/* {FAQ } */}
-     <Testi/>
+      <Testi />
       <Faq />
-     
+
       {/* {END AFQ} */}
     </div>
   );
